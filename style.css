@@ -41,10 +41,12 @@ body {
   margin: 20px;
 }
 .nav-link:hover {
-  color: black;
-  background: #f1f0e8;
-  padding: 5px;
+/*   color: black; */
+/*   background: #f1f0e8; */
+/*   padding: 5px; */
+  text-shadow: 0px 5px 5px rgb(241,240,232);
   border-radius: 7px;
+  
 }
 
 .content {
@@ -104,10 +106,14 @@ form {
 input {
   width: 100%;
   border-radius: 3px;
+  outline: none;
   border: 1px solid #279eff;
   padding: 10px;
   margin: 0px 0px 20px 0px;
 }
 .box {
   line-height: 10px;
+}
+.box:focus{
+  border: 2px solid #96b6c5;
 }
