@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kalam&display=swap");
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 * {
   margin: 0;
@@ -9,12 +9,12 @@ html{
   font-family: "DM Sans", sans-serif;
 }
 body {
-  background-color: #F1F0E8;
+  background-color: #f1f0e8;
 }
 
 .navbar {
   padding: 20px;
-  background: #96B6C5;
+  background: #96b6c5;
   position: sticky;
   top: 0px;
   display: flex;
@@ -22,8 +22,8 @@ body {
   align-items: center;
 }
 #logo {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
   margin-left: 30px;
   font-size: 25px;
 }
@@ -42,7 +42,7 @@ body {
 }
 .nav-link:hover {
   color: black;
-  background: #F1F0E8;
+  background: #f1f0e8;
   padding: 5px;
   border-radius: 7px;
 }
@@ -70,8 +70,9 @@ th {
   border: 1px solid rgba(0 0 0/0.2);
   border-collapse: collapse;
 }
-td, th{
-    padding:10px;
+td,
+th {
+  padding: 10px;
 }
 th {
   text-align: left;
@@ -80,8 +81,10 @@ table {
   margin-top: 20px;
   width: 100%;
 }
-.title-link {
-  color: blue;
+.book-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 form {
@@ -95,13 +98,13 @@ form {
   width: 100%;
   padding: 10px;
 }
-.reg-button:hover{
-    background:#0c356a;
+.reg-button:hover {
+  background: #0c356a;
 }
 input {
   width: 100%;
   border-radius: 3px;
-  border: 1px solid #279EFF;
+  border: 1px solid #279eff;
   padding: 10px;
   margin: 0px 0px 20px 0px;
 }
