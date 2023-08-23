@@ -1,26 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Kalam&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
 }
+
 body {
   background-color: #f1f0e8;
 }
 
 .navbar {
-  padding: 20px;
   background: #96b6c5;
-  position: sticky;
-  top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
+
 #logo {
   color: white;
   text-decoration: none;
@@ -28,44 +33,46 @@ body {
   font-size: 25px;
 }
 
-.menu {
-  list-style-type: none;
-  display: flex;
-}
-
 .nav-link {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 15px;
-  margin: 20px;
-}
-.nav-link:hover {
-/*   color: black; */
-/*   background: #f1f0e8; */
-/*   padding: 5px; */
-  text-shadow: 0px 5px 5px rgb(241,240,232);
-  border-radius: 7px;
-  
+  margin-right: 20px;
 }
 
-.content {
+.nav-link:hover {
+  text-shadow: 0px 5px 5px rgb(241, 240, 232);
+  border-radius: 7px;
+}
+
+#books,
+#register {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 98vw;
+  justify-content: center;
 }
-.card {
-  background: white;
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgb(0 0 0/0.2);
-  padding: 30px;
-  margin: 30px 0px;
+
+#books-div,
+#register-div {
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px darkgray;
+  padding: 20px;
+  background-color: white;
+  margin: 50px 0px 10px 0px;
 }
+
+#register-div {
+  width: 70%;
+}
+
 .card-head {
   text-align: center;
+  /* margin-bottom: 10px; */
+  font-size: 30px;
 }
+
 table,
 td,
 th {
@@ -80,40 +87,51 @@ th {
   text-align: left;
 }
 table {
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.book-cvr {
+  width: 18%;
+}
+
+.book-cvr > img {
   width: 100%;
 }
+
 .book-link {
   color: blue;
   text-decoration: none;
   font-size: 18px;
 }
 
-form {
-  margin-top: 20px;
-}
 .reg-button {
   color: white;
   background: #96b6c5;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 100%;
   padding: 10px;
+  margin-block: 10px;
 }
+
 .reg-button:hover {
   background: #0c356a;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
-  width: 100%;
   border-radius: 3px;
   outline: none;
-  border: 1px solid #c5c5c5;
+  border: 1px solid rgba(0 0 0/0.2);
   padding: 10px;
-  margin: 0px 0px 20px 0px;
+  margin: 5px 0px 10px 0px;
 }
-.box {
-  line-height: 10px;
-}
-.box:focus{
+
+.input-box:focus {
   border: 2px solid #96b6c5;
 }
